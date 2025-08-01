@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:machne_test/screens/newRegistration_screen.dart';
+import 'package:machne_test/screens/new_Registration_screen.dart';
 
 class BookingListScreen extends StatelessWidget {
   const BookingListScreen({super.key});
@@ -109,12 +109,13 @@ class BookingListScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
                     "Sort by:",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
-                  const SizedBox(width: 250),
+                  //  const SizedBox(width: 180),
                  SizedBox(
   width: 150,
   height: 40, // You can adjust this width

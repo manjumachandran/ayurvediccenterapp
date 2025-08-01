@@ -1,21 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:machne_test/screens/bookingList_Screen.dart';
-import 'package:machne_test/screens/login_screen.dart';
+import 'package:provider/provider.dart'; 
+import 'package:machne_test/screens/booking_List_Screen.dart';
+
 import 'package:machne_test/screens/splash_screen.dart';
+import 'package:machne_test/providers/login_provider.dart'; 
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => LoginProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-@override
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ayurvedics',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
