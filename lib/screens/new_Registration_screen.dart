@@ -296,36 +296,7 @@ Padding(
     children: [
       const Text("Treatment Time", style: TextStyle(fontSize: 16)),
       const SizedBox(height: 8),
-      // GestureDetector(
-      //   onTap: () async {
-      //     final TimeOfDay? picked = await showTimePicker(
-      //       context: context,
-      //       initialTime: _selectedTime ?? TimeOfDay.now(),
-      //     );
-      //     if (picked != null) {
-      //       setState(() {
-      //         _selectedTime = picked;
-      //         _hourController.text = picked.hour.toString().padLeft(2, '0');
-      //         _minuteController.text = picked.minute.toString().padLeft(2, '0');
-      //       });
-      //     }
-      //   },
-      //   child: Container(
-      //     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-      //     decoration: BoxDecoration(
-      //       color: Colors.grey.shade200,
-      //       borderRadius: BorderRadius.circular(10),
-      //       border: Border.all(color: Colors.grey),
-      //     ),
-      //     // child: Row(
-      //     //   children: const [
-      //     //     Icon(Icons.access_time, size: 20, color: Colors.black54),
-      //     //     SizedBox(width: 10),
-      //     //     Text("Choose Time", style: TextStyle(color: Colors.black54)),
-      //     //   ],
-      //     // ),
-      //   ),
-      // ),
+      
       const SizedBox(height: 10),
       Row(
         children: [

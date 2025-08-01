@@ -15,9 +15,12 @@ class LoginService {
       },
     );
 
+print('Status Code: ${response.statusCode}');
+  print('Response Body: ${response.body}');
+
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['token']; // Adjust based on actual response
+      return data['token']; 
     } else {
       debugPrint("Login failed: ${response.body}");
       return null;
